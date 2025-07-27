@@ -1,160 +1,41 @@
-## Core latex/pdflatex auxiliary files:
-*DS_Store*
-*.jekyll-*
-*_site*
-*.aux
-*.lof
-*.log
-*.lot
-*.fls
-*.out
-*.toc
-*.fmt
-*DS_Store
-## Intermediate documents:
-*.dvi
-*-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
-*.bcf
-*.blg
-*-blx.aux
-*-blx.bib
-*.brf
-*.run.xml
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-## Build tool auxiliary files:
-*.fdb_latexmk
-*.synctex
-*.synctex.gz
-*.synctex.gz(busy)
-*.pdfsync
+# testing
+/coverage
 
-## Auxiliary and intermediate files from other packages:
-# algorithms
-*.alg
-*.loa
+# next.js
+/.next/
+/out/
 
-# achemso
-acs-*.bib
+# production
+/build
 
-# amsthm
-*.thm
+# misc
+.DS_Store
+*.pem
 
-# beamer
-*.nav
-*.snm
-*.vrb
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# cprotect
-*.cpt
+# env files (can opt-in for committing if needed)
+.env*
 
-#(e)ledmac/(e)ledpar
-*.end
-*.[1-9]
-*.[1-9][0-9]
-*.[1-9][0-9][0-9]
-*.[1-9]R
-*.[1-9][0-9]R
-*.[1-9][0-9][0-9]R
-*.eledsec[1-9]
-*.eledsec[1-9]R
-*.eledsec[1-9][0-9]
-*.eledsec[1-9][0-9]R
-*.eledsec[1-9][0-9][0-9]
-*.eledsec[1-9][0-9][0-9]R
+# vercel
+.vercel
 
-# glossaries
-*.acn
-*.acr
-*.glg
-*.glo
-*.gls
-
-# gnuplottex
-*-gnuplottex-*
-
-# hyperref
-*.brf
-
-# knitr
-*-concordance.tex
-*.tikz
-*-tikzDictionary
-
-# listings
-*.lol
-
-# makeidx
-*.idx
-*.ilg
-*.ind
-*.ist
-
-# minitoc
-*.maf
-*.mtc
-*.mtc[0-9]
-*.mtc[1-9][0-9]
-
-# minted
-_minted*
-*.pyg
-
-# morewrites
-*.mw
-
-# mylatexformat
-*.fmt
-
-# nomencl
-*.nlo
-
-# sagetex
-*.sagetex.sage
-*.sagetex.py
-*.sagetex.scmd
-
-# sympy
-*.sout
-*.sympy
-sympy-plots-for-*.tex/
-
-# pdfcomment
-*.upa
-*.upb
-
-#pythontex
-*.pytxcode
-pythontex-files-*/
-
-# Texpad
-.texpadtmp
-
-# TikZ & PGF
-*.dpth
-*.md5
-*.auxlock
-
-# todonotes
-*.tdo
-
-# xindy
-*.xdy
-
-# xypic precompiled matrices
-*.xyc
-
-# WinEdt
-*.bak
-*.sav
-
-# endfloat
-*.ttt
-*.fff
-
+# typescript
+*.tsbuildinfo
+next-env.d.ts
