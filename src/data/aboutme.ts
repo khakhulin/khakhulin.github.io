@@ -36,7 +36,7 @@ Prior to that, in my master’s I investigated reinforcement-learning approaches
   googleScholarUrl: "https://scholar.google.ru/citations?user=D3OF4rYAAAAJ",
   githubUsername: "khakhulin",
   linkedinUsername: "taras-khakhulin",
-  twitterUsername: "tkhakhulin",
+  twitterUsername: "t_khakhulin",
   cvUrl: "/Taras_KhakhulinCV.pdf",
   institutionUrl: "https://runwayml.com",
   secretDescription: "I synthesize things that people currently cannot.",
