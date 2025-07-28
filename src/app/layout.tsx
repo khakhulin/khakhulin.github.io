@@ -3,6 +3,12 @@ import { Geist, Geist_Mono, Noto_Serif, PT_Serif } from "next/font/google";
 import "./globals.css";
 import { aboutMe } from "@/data/aboutme";
 import { customMetadata } from "@/data/title-description";
+
+// Utility: strip HTML tags for clean meta description
+function stripHtmlTags(html: string): string {
+  return html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+}
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,7 +33,8 @@ const ptSerif = PT_Serif({
 
 export const metadata: Metadata = {
   title: customMetadata.title || aboutMe.name,
-  description: customMetadata.description || aboutMe.description,
+  description:
+    customMetadata.description || stripHtmlTags(aboutMe.description),
   icons: {
     icon: "/dove-svgrepo-com.svg",
   },
