@@ -38,6 +38,28 @@ export const metadata: Metadata = {
   icons: {
     icon: "/dove-svgrepo-com.svg",
   },
+  openGraph: {
+    title: aboutMe.name,
+    description: stripHtmlTags(aboutMe.description),
+    url: "https://khakhulin.github.io/",
+    siteName: aboutMe.name,
+    images: [
+      {
+        url: "/images/taras_circle.jpg",
+        width: 400,
+        height: 400,
+        alt: aboutMe.name,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    title: aboutMe.name,
+    description: stripHtmlTags(aboutMe.description),
+    card: "summary_large_image",
+    images: ["/images/taras_circle.jpg"],
+  },
 };
 
 export default function RootLayout({
