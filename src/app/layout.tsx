@@ -4,9 +4,11 @@ import "./globals.css";
 import { aboutMe } from "@/data/aboutme";
 import { customMetadata } from "@/data/title-description";
 
-// Utility: strip HTML tags for clean meta description
+
 function stripHtmlTags(html: string): string {
-  return html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  const noHtml = html.replace(/<[^>]*>/g, " ");
+  const singleSpaced = noHtml.replace(/\s+/g, " ").trim();
+  return singleSpaced.replace(/\s+([.,;:!?'’])/g, "$1");
 }
 
 const geistSans = Geist({
