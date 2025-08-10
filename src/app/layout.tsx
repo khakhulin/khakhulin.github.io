@@ -39,15 +39,16 @@ export const metadata: Metadata = {
     icon: "/dove-svgrepo-com.svg",
   },
   openGraph: {
-    title: aboutMe.name,
-    description: stripHtmlTags(aboutMe.description),
+    title: customMetadata.title || aboutMe.name,
+    description: customMetadata.description || stripHtmlTags(aboutMe.description),
     url: "https://khakhulin.github.io/",
     siteName: aboutMe.name,
     images: [
       {
-        url: "/images/taras_circle.jpg",
-        width: 400,
-        height: 400,
+        // Use absolute URL so link previews (Telegram, Twitter, etc.) can fetch it reliably
+        url: "https://khakhulin.github.io/images/website-taras.jpg",
+        width: 1200,
+        height: 630,
         alt: aboutMe.name,
       },
     ],
@@ -55,10 +56,10 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    title: aboutMe.name,
-    description: stripHtmlTags(aboutMe.description),
+    title: customMetadata.title || aboutMe.name,
+    description: customMetadata.description || stripHtmlTags(aboutMe.description),
     card: "summary_large_image",
-    images: ["/images/taras_circle.jpg"],
+    images: ["https://khakhulin.github.io/images/website-taras.jpg"],
   },
 };
 
